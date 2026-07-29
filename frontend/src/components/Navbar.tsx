@@ -9,11 +9,11 @@ export const Navbar = () => {
   const closeMenu =()=>{setMenuOpen(false)}
 
   return (
-    <section className="sticky top-0 z-50 px-6 py-4 bg-black text-white">
+    <section className="sticky top-0 z-50 px-6 py-4 bg-[#463F3A] text-[#dee2ef]">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img src={logo} alt="SM Enterprises Logo"className="w-12 h-12 rounded-full object-cover"/>
-          <h1 className="text-xl font-bold text-green-400">SM Enterprises</h1>
+          <h1 className="text-xl font-bold text-[#dee2ef]">SM Enterprises</h1>
         </div>
 
         <div className="flex items-center gap-6">
