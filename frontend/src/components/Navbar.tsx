@@ -9,7 +9,7 @@ export const Navbar = () => {
   const closeMenu =()=>{setMenuOpen(false)}
 
   return (
-    <section className="sticky top-0 z-50 px-6 py-4 bg-[#463F3A] text-[#dee2ef]">
+    <section className="sticky top-0 z-50 px-6 py-4 bg-[#153243] text-[#dee2ef]">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img src={logo} alt="SM Enterprises Logo"className="w-12 h-12 rounded-full object-cover"/>
@@ -17,17 +17,16 @@ export const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-6">
-          <div className="hidden md:flex gap-6 font-medium">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#products">Products</a>
-            <a href="#contact">Contact</a>
+          <div className="hidden md:flex gap-6 font-medium text-lg">
+            <a href="#home" className = "font-700 hover:text-[#62929E] hover:text-xl">Home</a>
+            <a href="#about" className = "font-700 hover:text-[#62929E] hover:text-xl">About</a>
+            <a href="#services" className = "font-700 hover:text-[#62929E] hover:text-xl">Services</a>
+            <a href="#products" className = "font-700 hover:text-[#62929E] hover:text-xl">Products</a>
+            <a href="#contact" className = "font-700 hover:text-[#62929E] hover:text-xl">Contact</a>
           </div>
           <button 
             onClick={enquiry}
-            className="bg-blue-600 px-5 py-2 rounded-lg hover:bg-blue-700 transition"
-          >
+            className="border border-[#CFDBD5]/70 text-[#CFDBD5] px-4 py-2 rounded-full text-sm font-medium hover:border-[#CFDBD5] hover:bg-[#CFDBD5] hover:text-[#153243] hover:shadow-md transition-all duration-300">
             Enquiry
           </button>
 
