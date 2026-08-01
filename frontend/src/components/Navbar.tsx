@@ -4,8 +4,8 @@ import { useState } from "react";
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const enquiry = () => {
-    console.log("Enquiry button clicked");
-  }
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
   const closeMenu =()=>{setMenuOpen(false)}
 
   return (
