@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section id="contact"className="px-6 md:px-16 py-20 bg-[#CFDBD5]">
+    <section id="contact"className="px-6 md:px-16 py-20 bg-[#E8EDDF]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-[#153243] font-semibold uppercase tracking-[0.18em]">
@@ -33,7 +33,7 @@ export const Contact = () => {
                     Call Us
                   </p>
                   <p className="font-semibold text-[#153243]">
-                    +91 XXXXX XXXXX
+                    +91 80537 60426
                   </p>
                 </div>
               </div>
@@ -46,7 +46,7 @@ export const Contact = () => {
                     Email
                   </p>
                   <p className="font-semibold text-[#153243]">
-                    info@smenterprises.com
+                   savejali497@gmail.com
                   </p>
                 </div>
               </div>

@@ -25,11 +25,11 @@ export const Home = () => {
           </h1>
         </div>
 
-        <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#463F3A]">
+        <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#463F3A] text-justify">
           We manufacture high-quality wooden pallets, crates, and packaging
           boxes for logistics, warehousing, export shipments, and industrial
           applications. Custom sizes, bulk orders, and reliable delivery
-          solutions tailored to your business needs.
+          solutions tailored to your business needs.<a href="/products" className="font-semibold text-[#153243] hover:text-[#FF6A89] transition">  Explore»</a>
         </p>
 
        <a
@@ -40,6 +40,7 @@ export const Home = () => {
        <FaWhatsapp size={20} />
        WhatsApp Us
        </a>
+       
       </div>
     </section>
   );

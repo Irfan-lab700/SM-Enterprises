@@ -18,8 +18,8 @@ const About = () => {
             ✓ ISPM-15 Certified Manufacturer
           </div>
 
-          <p className="text-slate-600 mb-5 leading-8">
-            SM Enterprises, established in 2020 by Mr. XYZ, is a manufacturer
+          <p className="text-slate-600 mb-5 leading-6 text-justify">
+            SM Enterprises, established in <b>2026</b> by <b>Mr. Savej</b>, is a manufacturer
             of wooden pallets, wooden crates and wooden boxes for logistics,
             warehousing, transportation and industrial applications. We focus
             on delivering durable, customized and cost-effective wooden
