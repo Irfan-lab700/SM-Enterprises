@@ -1,7 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Services from "./components/Services";
@@ -25,7 +24,7 @@ function App() {
           </>
         }/>
 
-        <Route path="/products" element={<Products/>}/>
+        
 
       </Routes>
 

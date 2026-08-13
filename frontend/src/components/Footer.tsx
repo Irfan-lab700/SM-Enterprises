@@ -1,23 +1,27 @@
-import { useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate();
 
   const goHomeSection = (section: string) => {
-    navigate("/");
-    setTimeout(() => {
+    if (window.location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById(section)?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    } else {
       document.getElementById(section)?.scrollIntoView({
         behavior: "smooth",
       });
-    }, 100);
+    }
   };
 
   return (
     <footer className="bg-[#153243] text-white px-6 md:px-16 py-12">
-
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
 
-        {/* Company */}
         <div>
           <h3 className="text-2xl font-bold mb-4">
             SM Enterprises
@@ -30,73 +34,89 @@ const Footer = () => {
           </p>
         </div>
 
-
-        {/* Quick Links */}
         <div>
           <h4 className="text-lg font-semibold mb-5">
             Quick Links
           </h4>
 
           <div className="flex flex-col gap-3 text-[#CFDBD5]/80">
-
-            <button onClick={() => goHomeSection("home")} className="text-left hover:text-white transition">
+            <button
+              onClick={() => goHomeSection("home")}
+              className="text-left hover:text-white transition"
+            >
               Home
             </button>
 
-            <button onClick={() => goHomeSection("about")} className="text-left hover:text-white transition">
+            <button
+              onClick={() => goHomeSection("about")}
+              className="text-left hover:text-white transition"
+            >
               About
             </button>
 
-            <button onClick={() => goHomeSection("services")} className="text-left hover:text-white transition">
+            <button
+              onClick={() => goHomeSection("services")}
+              className="text-left hover:text-white transition"
+            >
               Services
             </button>
 
-            <a href="/products" className="hover:text-white transition">
-              Products
-            </a>
-
-            <button onClick={() => goHomeSection("contact")} className="text-left hover:text-white transition">
+            <button
+              onClick={() => goHomeSection("contact")}
+              className="text-left hover:text-white transition"
+            >
               Contact
             </button>
-
           </div>
         </div>
 
-
-        {/* Contact */}
         <div>
-
           <h4 className="text-lg font-semibold mb-5">
             Contact Information
           </h4>
 
           <div className="space-y-4 text-[#CFDBD5]/80">
 
-            <p>
-              📞 +91 XXXXX XXXXX
-            </p>
+            <a
+              href="tel:+918053760426"
+              className="block hover:text-white transition"
+            >
+              📞 +91 80537 60426
+            </a>
 
-            <p>
-              ✉ info@smenterprises.com
-            </p>
+            <a
+              href="mailto:savejali497@gmail.com"
+              className="block hover:text-white transition break-all"
+            >
+              ✉ savejali497@gmail.com
+            </a>
 
-            <p className="leading-relaxed">
-              📍 Full Address Here,
+            <a
+              href="https://wa.me/918053760426"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block hover:text-white transition"
+            >
+              💬 WhatsApp Us
+            </a>
+
+            <a
+              href="https://maps.app.goo.gl/iDiZcGWEhtULwgEi7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block leading-relaxed hover:text-white transition"
+            >
+              📍 Ambala, Haryana, India
               <br />
-              Your Area,
-              <br />
-              City, Haryana, India
-            </p>
+              View on Google Maps →
+            </a>
 
           </div>
-
         </div>
 
       </div>
 
-
       <div className="max-w-7xl mx-auto">
-
         <div className="border-t border-white/20 my-8"></div>
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
@@ -118,9 +138,7 @@ const Footer = () => {
           </p>
 
         </div>
-
       </div>
-
     </footer>
   );
 };

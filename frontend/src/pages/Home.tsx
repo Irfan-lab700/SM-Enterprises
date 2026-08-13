@@ -29,11 +29,11 @@ export const Home = () => {
           We manufacture high-quality wooden pallets, crates, and packaging
           boxes for logistics, warehousing, export shipments, and industrial
           applications. Custom sizes, bulk orders, and reliable delivery
-          solutions tailored to your business needs.<a href="/products" className="font-semibold text-[#153243] hover:text-[#FF6A89] transition">  Explore»</a>
+          solutions tailored to your business needs.<a href="#services" className="font-semibold text-[#153243] hover:text-[#FF6A89] transition">  Explore»</a>
         </p>
 
        <a
-       href="https://wa.me/919034816104?text=Hello%20SM%20Enterprises,%20I%20am%20interested%20in%20your%20wooden%20pallets."
+       href="https://wa.me/918053760426?text=Hello%20SM%20Enterprises,%20I%20am%20interested%20in%20your%20wooden%20pallets."
        target="_blank"
        rel="noopener noreferrer"
        className="mt-6 flex w-fit items-center gap-2 rounded-full border border-[#CFDBD5]/70 bg-[#153243] px-6 py-3 font-medium text-[#CFDBD5] transition-all duration-300 hover:border-[#153243] hover:bg-[#CFDBD5] hover:text-[#153243]">
